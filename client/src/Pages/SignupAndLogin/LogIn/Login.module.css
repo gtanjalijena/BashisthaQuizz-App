@@ -1,0 +1,37 @@
+.LogIn_Form {
+    border: 1px solid transparent;
+    width: 60%;
+    margin-top: 7%;
+    text-align: right;
+    margin-left: 17%;
+  }
+  .LogIn_Form > label {
+    font-weight: 400;
+  }
+  .LogIn_Form > input {
+    width: 55%;
+    padding: 6px 0px;
+    margin: 3% 0px 0px 5%;
+    background-color: rgb(244, 244, 244);
+    border-color: transparent;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .LogIn_Form > button {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    padding: 1.2% 18%;
+    border-color: transparent;
+    border-radius: 5px;
+    background: #a9bcff;
+    color: white;
+    transition-duration: 0.3s;
+  }
+  .LogIn_Form > button:hover {
+    background: #728ffa;
+  }
+  .LogIn_Form > button:active {
+    transform: scale(0.9);
+  }
+  

@@ -1,0 +1,75 @@
+//creating a template how should be the user data look like
+
+//type -1
+
+let user = {
+    name:"",
+    email:"",
+"password":"",
+quizname:{
+    QaA:[
+            {
+                QheadName:"",
+                 NumberOfVisits:0,
+                Timer:10/5s,
+                Questions:[
+                {QNam:"",Qtype:"",
+                TextQs:{totalTQ:["op1","op2",etc..],Qanswer:"",gaveCorrAns:0},
+                ImgQs:{totalIMGQ:[im1,img2,etc..],Qanser:"",gaveCorrAns:0},
+                Tex+Img:{totalTxIMGQ:[{tex:"",img:""},{tex:"",img:""}],Qanser:"",gaveCorrAns:0}
+                }
+                ],
+            }
+        ],
+    Poll:[]
+}
+}
+
+//*****************************************************************************************************
+//type -2(updated)
+
+let user = {
+    name:"",
+    email:"",
+password:"",
+quizDetails:{
+
+   OnlyQuiz:[ {
+                QuizName:"",
+                TimeCreated:date,
+                 NumberOfVisits:0,
+                SetATimer:10/5s,
+                QuizType:"",
+                WholeQuizQuestions:
+                [
+                {
+                 AquestionName:"",
+                 AquestionSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz"}
+                },
+                {
+                 AquestionName:"",
+                 AquestionSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz"}
+                }
+                ],
+            } ]
+    },
+
+   OnlyPoll:[{
+                PollName:"",
+                TimeCreated:date,
+                 NumberOfVisits:0,
+                SetATimer:10/5s,
+                PollType:"",
+                WholePollQuestions:
+                [
+                {
+                 APollName:"",
+                 APollSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz"}
+                },
+                 {
+                 APollName:"",
+                 APollSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz"}
+                }
+                ],
+           }]
+}

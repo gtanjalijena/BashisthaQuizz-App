@@ -1,8 +1,9 @@
+import SignupAndLogin from "./Pages/SignupAndLogin/SignupAndLogin.jsx";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hi.. I am App</h1>
+      <SignupAndLogin />
     </div>
   );
 }
