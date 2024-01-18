@@ -1,0 +1,51 @@
+
+.DAC_OptionsContainer {
+  border: 1px solid red;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: white;
+}
+
+.DAC_OptionsContainer > nav,
+main,
+footer {
+  border: 1px solid transparent;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  text-align: center;
+  color: #474444;
+  font-family: "Jomhuria", serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.DashSection {
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.12);
+}
+.AnalythicsSection {
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.12);
+}
+.CreateQuizSection {
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.12);
+}
+.DAC_OptionsContainer h3 {
+  padding: 12px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 550;
+}
+.Logout {
+  border: 1px solid ;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+  border-color: black transparent transparent transparent;
+}

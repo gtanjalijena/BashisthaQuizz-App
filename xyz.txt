@@ -44,11 +44,11 @@ quizDetails:{
                 [
                 {
                  AquestionName:"",
-                 AquestionSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz"}
+                 AquestionSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz",NoOfTImeCorrectAnsChoosen:0}
                 },
                 {
                  AquestionName:"",
-                 AquestionSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz"}
+                 AquestionSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz",NoOfTImeCorrectAnsChoosen:0}
                 }
                 ],
             } ]

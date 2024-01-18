@@ -4,8 +4,10 @@ import { useState } from "react";
 import { enterDetails, submitForm } from "./SignUp";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const Navigate = useNavigate();
   const [UserDetails, setUserdetails] = useState({
     name: "",
     email: "",
@@ -23,7 +25,7 @@ const SignUp = () => {
       console.log("result from function to ui:- ", SignIn_Response);
 
       if (SignIn_Response.status && SignIn_Response.status === 200) {
-        await toast.success("User has been created", {
+        toast.success(SignIn_Response.data.message, {
           position: "top-right",
           autoClose: 1000,
           hideProgressBar: true,
@@ -33,6 +35,17 @@ const SignUp = () => {
           progress: undefined,
           theme: "light",
         });
+
+        // storing jet tokein in session storage.
+        console.log("jwttoken:- ", SignIn_Response.data.jwttoken);
+        sessionStorage.setItem(
+          "jwttoken",
+          JSON.stringify(SignIn_Response.data.jwttoken)
+        );
+
+        setTimeout(() => {
+          Navigate("/dashboard");
+        }, 2000);
       } else {
         toast.error(SignIn_Response.response.data.message, {
           position: "top-right",

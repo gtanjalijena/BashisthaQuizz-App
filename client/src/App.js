@@ -1,9 +1,16 @@
-import SignupAndLogin from "./Pages/SignupAndLogin/SignupAndLogin.jsx";
+import { useState } from "react";
+import MyContext from "./Contextapi/MyContext";
+import PageRoutes from "./Routes/PageRoutes";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div className="App">
-      <SignupAndLogin />
+      <MyContext.Provider value={{ isLoggedIn, setIsLoggedIn,isLoading, setIsLoading }}>
+        <PageRoutes />
+      </MyContext.Provider>
     </div>
   );
 }

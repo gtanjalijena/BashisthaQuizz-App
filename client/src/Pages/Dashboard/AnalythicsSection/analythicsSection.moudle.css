@@ -1,0 +1,44 @@
+.analythics_Container {
+  border: 1px solid blue;
+  height: 100%;
+  width: 85%;
+  font-family: Poppins, sans-serif;
+}
+
+/* MyTable.css */
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 50px auto auto auto;
+}
+
+th,
+td {
+  border: none;
+  text-align: center;
+  padding: 13px;
+}
+
+th:last-child,
+td:last-child {
+  width: 35%;
+}
+td > i {
+  cursor: pointer;
+}
+td > i:hover {
+  transform: scale(0.9);
+}
+thead {
+  background-color: rgb(80, 118, 255);
+  color: white;
+}
+.analythics_Container > h1 {
+  border: 1px solid transparent;
+  text-align: center;
+  color: rgb(81, 118, 255);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(179, 196, 255);
+}

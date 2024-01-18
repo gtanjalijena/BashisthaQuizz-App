@@ -1,0 +1,77 @@
+.DashRight_Container {
+  border: 1px solid blue;
+  height: 100%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+}
+.DashRight_Container > div {
+  border: 1px solid red;
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+.DashRight_Container > h2 {
+  border: 1px solid red;
+  width: 70%;
+  height: 6%;
+  margin: 0 auto 0 auto;
+}
+.Quizzess_Info_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Quizzess_Info_div > div {
+  border: 1px dotted black;
+  height: auto;
+  width: 30%;
+  text-align: center;
+  font-weight: 550;
+  background-color: white;
+  border-radius: 10px;
+}
+.Quizzess_Info_div > div:nth-child(1) {
+  color: rgb(255, 93, 1);
+}
+.Quizzess_Info_div > div:nth-child(2) {
+  color: rgb(96, 184, 75);
+}
+.Quizzess_Info_div > div:nth-child(3) {
+  color: rgb(80, 118, 255);
+}
+
+.All_QuizesAndPoll_div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0px;
+  overflow: auto;
+}
+.All_QuizesAndPoll_div > div {
+  border: 1px dashed black;
+  width: 190px;
+  height: auto;
+  background-color: white;
+  padding: 12px;
+}
+.All_QuizesAndPoll_div > div > main,
+h2,
+p {
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.All_QuizesAndPoll_div > div p {
+  color: red;
+  gap: 10px;
+}
+.All_QuizesAndPoll_div > div > footer {
+  color: green;
+}

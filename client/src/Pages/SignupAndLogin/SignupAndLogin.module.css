@@ -1,8 +1,9 @@
-body {
+.MainContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   margin: 0;
   background-color: rgb(239, 239, 239);
 }
@@ -29,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 2%  auto;
+  margin: 2% auto;
 }
 .ChooseSingup_Or_Login_Box > button {
   cursor: pointer;
@@ -42,9 +43,9 @@ body {
 .ChooseSingup_Or_Login_Box > button:hover {
   background: rgba(84, 101, 251, 0.24);
 }
-.signUp{
-    box-shadow: 0 0 50px 0 rgba(0,25,255,.24)
+.signUp {
+  box-shadow: 0 0 50px 0 rgba(0, 25, 255, 0.24);
 }
-.logIn{
-    box-shadow: 0 0 50px 0 rgba(0,25,255,.24)
+.logIn {
+  box-shadow: 0 0 50px 0 rgba(0, 25, 255, 0.24);
 }
