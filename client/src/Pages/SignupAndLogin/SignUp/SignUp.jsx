@@ -44,7 +44,7 @@ const SignUp = () => {
         );
 
         setTimeout(() => {
-          Navigate("/dashboard");
+          Navigate("/home");
         }, 2000);
       } else {
         toast.error(SignIn_Response.response.data.message, {

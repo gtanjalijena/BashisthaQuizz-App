@@ -11,7 +11,7 @@ import HomeCss from "./Home.module.css";
 
 const SomeOtherComponent = () => {
   const { isLoggedIn, isLoading } = useDashboard();
-  const [sectionSelected, setSectionSelected] = useState("DashSection");
+  const [sectionSelected, setSectionSelected] = useState("CreateQuizSection");
 
   return (
     <MyContext.Provider value={{ sectionSelected, setSectionSelected }}>

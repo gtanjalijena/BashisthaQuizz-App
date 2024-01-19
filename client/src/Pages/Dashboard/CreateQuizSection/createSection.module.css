@@ -1,24 +1,79 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-.CreateQuiz_Container{
-    border: 1px solid blue;
-    position: absolute;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0,0,0,.2);
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+.CreateQuiz_Container {
+  border: 1px solid blue;
+  position: absolute;
+  /* backdrop-filter: blur(5px); */
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
 
-.whitePopUp_Box{
-    background-color: #fff;
-    border-radius: 5px;
-    height: 30vh;
-    padding: 15px;
-    width: 30vw;
-    
+.whitePopUp_Box {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 30vh;
+  padding: 35px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.QuizName_Input {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+}
+
+.Quiz_Poll_Type_Div,
+.Continue_Calcel_buttonDIV {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.Quiz_Poll_Type_Div {
+  color: rgb(197, 197, 197);
+}
+.Quiz_Poll_Type_Div > button {
+  cursor: pointer;
+  padding: 5px 30px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  background-color: white;
+}
+.Continue_Calcel_buttonDIV > button {
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  padding: 4px 8px;
+  border-radius: 5px;
+  width: 45%;
+}
+.Continue_Calcel_buttonDIV > button:first-child {
+  background: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+.Continue_Calcel_buttonDIV > button:last-child {
+  background: #60b84b;
+}
+.Continue_Calcel_buttonDIV > button:first-child:hover {
+  background: #dedcdc;
+}
+.Continue_Calcel_buttonDIV > button:last-child:hover {
+  background: #5bd93c;
+}
+.Quiz_Poll_Type_Div > .Quiz_Button {
+  background-color: rgb(96, 184, 75);
+  color: white;
+}
+.Quiz_Poll_Type_Div > .Poll_Button {
+  background-color: rgb(96, 184, 75);
+  color: white;
 }

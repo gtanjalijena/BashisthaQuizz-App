@@ -34,17 +34,17 @@ let user = {
 password:"",
 quizDetails:{
 
-   OnlyQuiz:[ {
+   OnlyALLQuiz:[ {
                 QuizName:"",
                 TimeCreated:date,
                  NumberOfVisits:0,
                 SetATimer:10/5s,
                 QuizType:"",
-                WholeQuizQuestions:
+                QuizQuestions_SET:
                 [
                 {
-                 AquestionName:"",
-                 AquestionSelectedType:{Options:[{},{},{},{}],CorrectAnswer:"xyz",NoOfTImeCorrectAnsChoosen:0}
+                 Single_questionName:"",
+                  Single_questionSET:{Options:[{},{},{},{}],CorrectAnswer:"xyz",NoOfTImeCorrectAnsChoosen:0}
                 },
                 {
                  AquestionName:"",
@@ -54,7 +54,7 @@ quizDetails:{
             } ]
     },
 
-   OnlyPoll:[{
+   OnlyALLPoll:[{
                 PollName:"",
                 TimeCreated:date,
                  NumberOfVisits:0,

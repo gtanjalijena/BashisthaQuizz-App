@@ -1,0 +1,164 @@
+.quizDetails_BOX {
+  border: 2px solid red;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 79vh;
+  padding: 0px;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+.quizDetails_BOX > div {
+  border: 1px solid red;
+  width: 75%;
+}
+.MaxQn_heading_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MaxQn_heading_div > div {
+  border: 1px solid blue;
+  height: auto;
+  width: auto;
+}
+.MaxQn_heading_div > div:first-child {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.MaxQn_heading_div > div:first-child > button {
+  width: 48px;
+  height: 45px;
+  border-radius: 35px;
+  border-color: transparent;
+  background-color: white;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+/*css applied if we select any opened button/round button */
+.MaxQn_heading_div > div:first-child > .Round_button {
+  border: 1px solid green;
+}
+/* X sign to delete a auestion set  */
+.MaxQuestion_CrossX {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.Increase_PlusSign {
+  font-size: 35px;
+  margin: 0;
+  cursor: pointer;
+  margin-left: 5%;
+}
+
+.Question_Name_Input_div > input {
+  width: 96%;
+  background: #fff;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+  padding: 10px 2%;
+}
+
+.Option_TYpe_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.FillQuestion_Div {
+  display: flex;
+  height: 40%;
+  justify-content: space-between;
+}
+.FillQuestion_Div > div {
+  border: 1px dotted green;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+
+/* if q type is image and text  */
+.FillQuestion_Div > div:first-child,
+.FillQuestion_Div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.FillQuestion_Div > div:first-child input,
+.FillQuestion_Div > div:nth-child(2) input {
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* timer div part */
+.FillQuestion_Div > div:last-child {
+  /* border: 1px dashed blue; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.FillQuestion_Div > div:last-child > main {
+  display: block;
+  border: 2px solid red;
+  width: auto;
+}
+.Timer_heading {
+  text-align: center;
+  margin: 0;
+}
+.FillQuestion_Div > div:last-child > main > p {
+  border: 1px solid black transparent;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px 5px;
+  margin-top: 5px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.FillQuestion_Div > div:last-child > main > p:hover {
+  transform: scale(0.9);
+}
+.CancelCreate_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CancelCreate_div > button {
+  display: block;
+  width: 32%;
+  padding: 7px 0px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: white;
+}
+.CancelCreate_div > button:last-child {
+  background-color: rgb(96, 184, 75);
+  color: white;
+}
+
+/* timer color red */
+.OffSelected,
+.FiveSEC_Selected,
+.TenSEC_Selected {
+  background-color: red;
+}

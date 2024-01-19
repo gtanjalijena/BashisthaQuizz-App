@@ -40,7 +40,7 @@ const Login = () => {
         );
 
         setTimeout(() => {
-          Navigate("/dashboard");
+          Navigate("/home");
         }, 2000);
       } else {
         toast.error(LogIn_Response.response.data.message, {
