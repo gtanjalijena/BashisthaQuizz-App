@@ -1,4 +1,4 @@
-const serverUrl = "http://localhost:7000"
+const serverUrl = "https://bashistha-quizzbackend.onrender.com"
 
 
 export default serverUrl;
