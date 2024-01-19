@@ -1,4 +1,4 @@
-const serverUrl = "http://localhost:7000"
+const serverUrl = "https://bashistha-quizz-app.vercel.app"
 
 
 export default serverUrl;
