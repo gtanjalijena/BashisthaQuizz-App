@@ -5,7 +5,7 @@ import isAuthenticated from "../middlewares/jwt.js";
 
 const router = express.Router();
 
-router.get("/", test);
+router.get("/", (req,res)=>{res.send("test backend)};
 router.post("/signup", signupRoute);
 router.post("/login", loginRoute);
 
