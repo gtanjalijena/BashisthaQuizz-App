@@ -9,6 +9,6 @@ dotenv.config();
 app.use(express.json());
 
 app.use(router);
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => console.log(` app running on port ${PORT}!`));
